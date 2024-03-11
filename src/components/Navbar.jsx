@@ -14,10 +14,10 @@ function Navbar() {
       <div className="logo">Ladder Safety Checklist</div>
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li>
-          <a href="/ladder">Ladder inspection</a>
+          <a href="ladder">Ladder inspection</a>
         </li>
         <li>
-          <a href="/using">Usage instructions</a>
+          <a href="using">Usage instructions</a>
         </li>
       </ul>
       <button className="menu-btn" onClick={toggleMenu}>

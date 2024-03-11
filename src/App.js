@@ -141,8 +141,8 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/ladder" element={<Tasks list={ladderChecklist} />} />
-          <Route path="/using" element={<Tasks list={usingChecklist} />} />
+          <Route path="ladder" element={<Tasks list={ladderChecklist} />} />
+          <Route path="using" element={<Tasks list={usingChecklist} />} />
           <Route index element={<Tasks list={ladderChecklist} />} />
         </Routes>
       </div>
