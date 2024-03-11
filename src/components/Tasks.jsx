@@ -4,6 +4,10 @@ import "../Tasks.css";
 function Tasks(props) {
   const [tasks, setTasks] = useState(props.list);
 
+  useEffect(() => {
+    setTasks(props.list);
+  }, [props.list]);
+
   const toggleComplete = (taskId) => {
     setTasks(
       tasks.map((task) => {
