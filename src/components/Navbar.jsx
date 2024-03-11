@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import "../Navbar.css";
 
@@ -14,10 +15,10 @@ function Navbar() {
       <div className="logo">Ladder Safety Checklist</div>
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li>
-          <a to="/ladder">Ladder inspection</a>
+          <Link to="/ladder">Ladder inspection</Link>
         </li>
         <li>
-          <a to="/using">Usage instructions</a>
+          <Link to="/using">Usage instructions</Link>
         </li>
       </ul>
       <button className="menu-btn" onClick={toggleMenu}>
